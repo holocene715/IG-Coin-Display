@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.catalog }} — {{ page.title }}</title>
+
+  <link rel="stylesheet"
+        href="{{ '/assets/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<main class="coin-page">
+
+  <header class="coin-header">
+    <div class="catalog-number">{{ page.catalog }}</div>
+
+    <h1>{{ page.title }}</h1>
+
+    <p class="subtitle">
+      {{ page.issuer }} · {{ page.date }}
+    </p>
+  </header>
+
+
+  <section class="coin-images">
+
+    <figure>
+      <img
+        src="{{ page.obverse_image | relative_url }}"
+        alt="Obverse of {{ page.title }}">
+      <figcaption>Obverse</figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="{{ page.reverse_image | relative_url }}"
+        alt="Reverse of {{ page.title }}">
+      <figcaption>Reverse</figcaption>
+    </figure>
+
+  </section>
+
+
+  <section class="coin-data">
+
+    <div>
+      <span>Ruler</span>
+      <strong>{{ page.ruler }}</strong>
+    </div>
+
+    <div>
+      <span>Issuer</span>
+      <strong>{{ page.issuer }}</strong>
+    </div>
+
+    <div>
+      <span>Date</span>
+      <strong>{{ page.date }}</strong>
+    </div>
+
+    <div>
+      <span>Mint</span>
+      <strong>{{ page.mint }}</strong>
+    </div>
+
+    <div>
+      <span>Denomination</span>
+      <strong>{{ page.denomination }}</strong>
+    </div>
+
+    <div>
+      <span>Metal</span>
+      <strong>{{ page.metal }}</strong>
+    </div>
+
+    <div>
+      <span>Weight</span>
+      <strong>{{ page.weight }}</strong>
+    </div>
+
+    <div>
+      <span>Diameter</span>
+      <strong>{{ page.diameter }}</strong>
+    </div>
+
+  </section>
+
+
+  <section class="description">
+
+    <h2>Obverse</h2>
+    <p>{{ page.obverse }}</p>
+
+    <h2>Reverse</h2>
+    <p>{{ page.reverse }}</p>
+
+    {% if page.legend %}
+      <div class="legend">
+        <h3>Inscription</h3>
+        <p class="greek">{{ page.legend }}</p>
+
+        {% if page.translation %}
+          <p class="translation">{{ page.translation }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  </section>
+
+
+  <section class="context">
+
+    <h2>About this coin</h2>
+
+    {{ content }}
+
+  </section>
+
+
+  {% if page.references %}
+  <section class="references">
+
+    <h2>References</h2>
+
+    <p>{{ page.references }}</p>
+
+  </section>
+  {% endif %}
+
+
+  <footer>
+    <p>IG Ancient Coin Collection · {{ page.catalog }}</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
