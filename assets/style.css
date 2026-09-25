@@ -359,3 +359,8 @@ footer {
   color: #393630;
   white-space: nowrap;
 }
+
+.coin-timeline {
+  border: 5px solid red !important;
+  background: yellow !important;
+}
