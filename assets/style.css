@@ -263,3 +263,101 @@ footer {
   }
 
 }
+
+/* COLLECTION TIMELINE */
+
+.coin-timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 35px auto 60px;
+  padding-bottom: 34px;
+}
+
+.timeline-end-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: #817b70;
+}
+
+.timeline-track {
+  position: relative;
+  height: 2px;
+  background: #aaa398;
+}
+
+.timeline-tick {
+  position: absolute;
+  top: -3px;
+  width: 1px;
+  height: 8px;
+  background: #aaa398;
+}
+
+.tick-0 {
+  left: 15%;
+}
+
+.tick-500 {
+  left: 40%;
+}
+
+.tick-1000 {
+  left: 65%;
+}
+
+.tick-1500 {
+  left: 90%;
+}
+
+.tick-1700 {
+  left: 100%;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: -6px;
+
+  width: 14px;
+  height: 14px;
+
+  background: #393630;
+  border: 2px solid #eeeae2;
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timeline-years {
+  position: relative;
+  height: 18px;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.62rem;
+  color: #817b70;
+}
+
+.timeline-years span {
+  position: absolute;
+  top: 5px;
+  transform: translateX(-50%);
+}
+
+.timeline-coin-date {
+  position: absolute;
+  top: 45px;
+
+  transform: translateX(-50%);
+
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: bold;
+  color: #393630;
+
+  white-space: nowrap;
+}
