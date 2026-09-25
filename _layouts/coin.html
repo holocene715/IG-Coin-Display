@@ -32,6 +32,46 @@
     <p class="subtitle">
       {{ page.issuer }} · {{ page.date }}
     </p>
+    {% if page.timeline_year %}
+
+<div class="coin-timeline">
+
+  <div class="timeline-end-labels">
+    <span>300 BCE</span>
+    <span>1700 CE</span>
+  </div>
+
+  <div class="timeline-track">
+
+    <span class="timeline-tick tick-0"></span>
+    <span class="timeline-tick tick-500"></span>
+    <span class="timeline-tick tick-1000"></span>
+    <span class="timeline-tick tick-1500"></span>
+    <span class="timeline-tick tick-1700"></span>
+
+    <span
+      class="timeline-marker"
+      style="left: {{ page.timeline_year | plus: 300 | times: 100.0 | divided_by: 2000 }}%;">
+    </span>
+
+  </div>
+
+  <div class="timeline-years">
+    <span style="left: 15%;">1 CE</span>
+    <span style="left: 40%;">500</span>
+    <span style="left: 65%;">1000</span>
+    <span style="left: 90%;">1500</span>
+  </div>
+
+  <div
+    class="timeline-coin-date"
+    style="left: {{ page.timeline_year | plus: 300 | times: 100.0 | divided_by: 2000 }}%;">
+    {{ page.timeline_label }}
+  </div>
+
+</div>
+
+{% endif %}
   </header>
 
 
