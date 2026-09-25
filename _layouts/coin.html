@@ -8,6 +8,16 @@
 
   <link rel="stylesheet"
         href="{{ '/assets/style.css' | relative_url }}">
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+  
 </head>
 
 <body>
@@ -117,26 +127,74 @@
 
   </section>
 
-  <section class="historical-map">
+{% if page.polity_geojson %}
+
+<section class="historical-map">
 
   <h2>Historical Geography</h2>
 
   <p class="map-description">
-    {{ page.mint }} · {{ page.map_date }}
+    {{ page.polity_name }} · {{ page.map_date }}
   </p>
 
-  <div class="map-frame">
-    <iframe
-      src="{{ page.map_url }}"
-      title="Historical map for {{ page.title }}"
-      loading="lazy"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <div id="coin-map"></div>
+
+  <p class="map-location">
+    <strong>{{ page.mint_name }}</strong><br>
+    {{ page.mint_modern }}
+  </p>
 
   <p class="map-credit">
-    Historical political boundaries provided by GeaCron.
+    Historical political boundaries adapted from Cliopatria,
+    Seshat Global History Databank. Political boundaries are approximate.
   </p>
+
+</section>
+
+<script>
+
+const map = L.map('coin-map').setView(
+  [{{ page.mint_lat }}, {{ page.mint_lon }}],
+  {{ page.map_zoom }}
+);
+
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
+    attribution: '&copy; OpenStreetMap contributors'
+  }
+).addTo(map);
+
+L.marker([
+  {{ page.mint_lat }},
+  {{ page.mint_lon }}
+])
+.addTo(map)
+.bindPopup(
+  '<strong>{{ page.mint_name }}</strong><br>{{ page.mint_modern }}'
+);
+
+fetch('{{ page.polity_geojson | relative_url }}')
+  .then(response => response.json())
+  .then(data => {
+
+    const polity = L.geoJSON(data, {
+
+      style: {
+        color: '#514b42',
+        weight: 2,
+        opacity: 0.8,
+        fillColor: '#777066',
+        fillOpacity: 0.22
+      }
+
+    }).addTo(map);
+
+  });
+
+</script>
+
+{% endif %}
 
 </section>
 
