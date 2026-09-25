@@ -117,6 +117,28 @@
 
   </section>
 
+  <section class="historical-map">
+
+  <h2>Historical Geography</h2>
+
+  <p class="map-description">
+    {{ page.mint }} · {{ page.map_date }}
+  </p>
+
+  <div class="map-frame">
+    <iframe
+      src="{{ page.map_url }}"
+      title="Historical map for {{ page.title }}"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p class="map-credit">
+    Historical political boundaries provided by GeaCron.
+  </p>
+
+</section>
 
   {% if page.references %}
   <section class="references">
