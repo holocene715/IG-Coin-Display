@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eeeae2;
+  color: #292722;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+.coin-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 55px 28px;
+}
+
+.coin-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.catalog-number {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: #777066;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: normal;
+  margin: 8px 0 3px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #706b61;
+  font-size: 1.05rem;
+}
+
+.coin-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin: 45px 0;
+}
+
+.coin-images figure {
+  margin: 0;
+  text-align: center;
+}
+
+.coin-images img {
+  width: 100%;
+  max-width: 330px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #777066;
+}
+
+.coin-data {
+  border-top: 1px solid #bdb6aa;
+  border-bottom: 1px solid #bdb6aa;
+  padding: 20px 0;
+  margin: 35px 0 45px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.coin-data div {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 20px;
+}
+
+.coin-data span {
+  font-family: Arial, sans-serif;
+  color: #777066;
+  font-size: 0.85rem;
+}
+
+.coin-data strong {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-top: 35px;
+}
+
+.legend {
+  margin: 30px 0;
+  padding: 20px 25px;
+  background: #e3ded4;
+}
+
+.legend h3 {
+  margin-top: 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.greek {
+  font-size: 1.2rem;
+}
+
+.translation {
+  color: #6d685f;
+  font-style: italic;
+}
+
+.context,
+.references {
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 70px;
+  padding-top: 20px;
+  border-top: 1px solid #bdb6aa;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: .75rem;
+  color: #817b70;
+}
+
+
+/* PHONE DISPLAY */
+
+@media (max-width: 600px) {
+
+  .coin-page {
+    padding: 35px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .coin-images {
+    gap: 12px;
+  }
+
+  .coin-data {
+    grid-template-columns: 1fr;
+  }
+
+  .coin-data div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+}
