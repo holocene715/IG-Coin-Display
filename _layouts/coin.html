@@ -25,23 +25,21 @@
   </header>
 
 
-  <section class="coin-images">
+<section class="coin-rendition">
 
-    <figure>
-      <img
-        src="{{ page.obverse_image | relative_url }}"
-        alt="Obverse of {{ page.title }}">
-      <figcaption>Obverse</figcaption>
-    </figure>
+  <img
+    src="{{ page.rendition_image | relative_url }}"
+    alt="Clean illustrated rendition of the obverse and reverse of {{ page.title }}">
 
-    <figure>
-      <img
-        src="{{ page.reverse_image | relative_url }}"
-        alt="Reverse of {{ page.title }}">
-      <figcaption>Reverse</figcaption>
-    </figure>
+  <p class="rendition-label">
+    Clean renditions of the obverse and reverse
+  </p>
 
-  </section>
+  <p class="rendition-note">
+    Interpretive line drawings illustrating the principal features of the coin type.
+  </p>
+
+</section>
 
 
   <section class="coin-data">
