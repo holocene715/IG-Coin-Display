@@ -226,3 +226,40 @@ footer {
   font-size: 0.7rem;
   color: #817b70;
 }
+
+.historical-map {
+  margin-top: 55px;
+}
+
+.map-description {
+  margin-top: -10px;
+  color: #706b61;
+  font-style: italic;
+}
+
+#coin-map {
+  width: 100%;
+  height: 430px;
+  margin-top: 20px;
+  border: 1px solid #bdb6aa;
+}
+
+.map-location {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.map-credit {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  color: #817b70;
+}
+
+@media (max-width: 600px) {
+
+  #coin-map {
+    height: 330px;
+  }
+
+}
