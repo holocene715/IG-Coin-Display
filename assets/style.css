@@ -166,3 +166,31 @@ footer {
   }
 
 }
+.coin-rendition {
+  text-align: center;
+  margin: 45px 0 50px;
+}
+
+.coin-rendition img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.rendition-label {
+  margin: 14px 0 2px;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #5f5a51;
+}
+
+.rendition-note {
+  margin: 3px auto 0;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #817b70;
+}
