@@ -124,6 +124,20 @@
       <strong>{{ page.denomination }}</strong>
     </div>
 
+      {% if page.language %}
+  <div>
+    <span>Language</span>
+    <strong>{{ page.language }}</strong>
+  </div>
+  {% endif %}
+
+  {% if page.script %}
+<div>
+  <span>Script</span>
+  <strong>{{ page.script }}</strong>
+</div>
+{% endif %}
+    
     <div>
       <span>Metal</span>
       <strong>{{ page.metal }}</strong>
