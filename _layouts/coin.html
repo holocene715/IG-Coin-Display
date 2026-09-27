@@ -23,7 +23,13 @@
 <body>
 
 <main class="coin-page">
-
+  
+{% if page.era %}
+<div class="era-label">
+  {{ page.era }}
+</div>
+{% endif %}
+  
   <header class="coin-header">
     <div class="catalog-number">{{ page.catalog }}</div>
 
