@@ -389,3 +389,10 @@ footer {
   max-width: 190px;
   text-align: center;
 }
+
+.era-label {
+  position: static;
+  width: fit-content;
+  margin: 0 0 25px auto;
+  max-width: 180px;
+}
