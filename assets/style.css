@@ -46,6 +46,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 35px;
   margin: 45px 0;
+  border: 1px solid #bdb6aa;
 }
 
 .coin-images figure {
