@@ -483,3 +483,19 @@ footer {
     padding-top: 24px;
   }
 }
+
+/* Space below era label before coin header */
+
+.coin-header {
+  margin-top: 55px !important;
+}
+
+@media (max-width: 600px) {
+  .coin-header {
+    margin-top: 35px !important;
+  }
+
+  .coin-page .era-label {
+    margin-bottom: 35px !important;
+  }
+}
