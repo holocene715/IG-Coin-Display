@@ -260,11 +260,17 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .era-label {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
 
-  #coin-map {
-    height: 330px;
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto 24px;
   }
-
 }
 
 /* COLLECTION TIMELINE */
