@@ -425,3 +425,16 @@ footer {
   margin-top: 5px;
 }
 
+/* Legend panel */
+
+.coin-legend {
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: #f3f1ed;
+  border: 1px solid #ddd8cf;
+  border-radius: 3px;
+}
+
+.coin-legend h2 {
+  margin-top: 0;
+}
