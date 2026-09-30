@@ -25,7 +25,10 @@
 <main class="coin-page">
   
 {% if page.era %}
-<div class="era-label">
+<div class="era-label"
+     {% if page.era_color %}
+     style="border-color: {{ page.era_color }};"
+     {% endif %}>
   {{ page.era }}
 </div>
 {% endif %}
@@ -304,11 +307,3 @@ fetch('{{ page.polity_geojson | relative_url }}')
 </body>
 </html>
 
-{% if page.era %}
-<div class="era-label"
-     {% if page.era_color %}
-     style="border-color: {{ page.era_color }};"
-     {% endif %}>
-  {{ page.era }}
-</div>
-{% endif %}
