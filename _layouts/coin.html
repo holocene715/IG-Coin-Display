@@ -169,6 +169,7 @@
   <h2>Legend</h2>
 
   {% if page.legend_obverse %}
+
     <div class="legend-entry">
       <span class="legend-side">Obverse</span>
       <div class="legend-original{% if page.legend_direction == 'rtl' %} rtl{% endif %}">
@@ -176,23 +177,28 @@
       </div>
     </div>
 
+    {% if page.legend_reverse %}
     <div class="legend-entry">
       <span class="legend-side">Reverse</span>
       <div class="legend-original{% if page.legend_direction == 'rtl' %} rtl{% endif %}">
         {{ page.legend_reverse }}
       </div>
     </div>
+    {% endif %}
 
   {% else %}
+
     <p>{{ page.legend }}</p>
+
   {% endif %}
 
   {% if page.translation %}
-    <div class="legend-translation">
-      <span>Translation</span>
-      <p>{{ page.translation }}</p>
-    </div>
+  <div class="legend-translation">
+    <span>Translation</span>
+    <p>{{ page.translation }}</p>
+  </div>
   {% endif %}
+
 </section>
 {% endif %}
 
