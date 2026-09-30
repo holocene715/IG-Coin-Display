@@ -156,60 +156,54 @@
   </section>
 
 
-  <section class="description">
+ <section class="description">
 
-    <h2>Obverse</h2>
-    <p>{{ page.obverse }}</p>
+  <h2>Obverse</h2>
+  <p>{{ page.obverse }}</p>
 
-    <h2>Reverse</h2>
-    <p>{{ page.reverse }}</p>
+  <h2>Reverse</h2>
+  <p>{{ page.reverse }}</p>
 
-{% if page.legend %}
-<section class="coin-legend">
-  <h2>Legend</h2>
+  {% if page.legend %}
+  <section class="coin-legend">
 
-  {% if page.legend_obverse %}
+    <h2>Legend</h2>
 
-    <div class="legend-entry">
-      <span class="legend-side">Obverse</span>
-      <div class="legend-original{% if page.legend_direction == 'rtl' %} rtl{% endif %}">
-        {{ page.legend_obverse }}
+    {% if page.legend_obverse %}
+
+      <div class="legend-entry">
+        <span class="legend-side">Obverse</span>
+        <div class="legend-original{% if page.legend_direction == 'rtl' %} rtl{% endif %}">
+          {{ page.legend_obverse }}
+        </div>
       </div>
-    </div>
 
-    {% if page.legend_reverse %}
-    <div class="legend-entry">
-      <span class="legend-side">Reverse</span>
-      <div class="legend-original{% if page.legend_direction == 'rtl' %} rtl{% endif %}">
-        {{ page.legend_reverse }}
+      {% if page.legend_reverse %}
+      <div class="legend-entry">
+        <span class="legend-side">Reverse</span>
+        <div class="legend-original{% if page.legend_direction == 'rtl' %} rtl{% endif %}">
+          {{ page.legend_reverse }}
+        </div>
       </div>
-    </div>
+      {% endif %}
+
+    {% else %}
+
+      <p>{{ page.legend }}</p>
+
     {% endif %}
 
-  {% else %}
-
-    <p>{{ page.legend }}</p>
-
-  {% endif %}
-
-  {% if page.translation %}
-  <div class="legend-translation">
-    <span>Translation</span>
-    <p>{{ page.translation }}</p>
-  </div>
-  {% endif %}
-
-</section>
-{% endif %}
-
-        {% if page.translation %}
-          <p class="translation">{{ page.translation }}</p>
-        {% endif %}
-      </div>
+    {% if page.translation %}
+    <div class="legend-translation">
+      <span>Translation</span>
+      <p>{{ page.translation }}</p>
+    </div>
     {% endif %}
 
   </section>
-{% endif %}
+  {% endif %}
+
+</section>
 
   <section class="context">
 
