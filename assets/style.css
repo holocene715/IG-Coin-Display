@@ -399,3 +399,41 @@ footer {
   margin: 0 0 25px auto;
   max-width: 180px;
 }
+
+/* Coin legends */
+
+.legend-entry {
+  margin: 18px 0;
+}
+
+.legend-side,
+.legend-translation span {
+  display: block;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: bold;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: #817b70;
+}
+
+.legend-original {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.legend-original.rtl {
+  direction: rtl;
+  unicode-bidi: isolate;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.legend-translation {
+  margin-top: 24px;
+}
+
+.legend-translation p {
+  margin-top: 5px;
+}
