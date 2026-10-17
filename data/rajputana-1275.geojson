@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "name": "Rajputana — approximate attribution, 1275 CE",
+  "metadata": {
+    "map_year": 1275,
+    "coin": "C019",
+    "note": "Approximate regional locator only; neither mint nor political boundaries are securely established. This is not a territorial polygon."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Rajputana (approximate region)",
+        "Type": "APPROXIMATE_REGION_LOCATOR",
+        "FromYear": 1275,
+        "ToYear": 1275,
+        "certainty": "low",
+        "note": "General geographic reference point in present-day Rajasthan, not a mint location or capital."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5,
+          26.8
+        ]
+      }
+    }
+  ]
+}
