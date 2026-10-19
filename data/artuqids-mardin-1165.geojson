@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "name": "Artuqids of Mardin — c. 1165 CE (capital marker; territorial boundary unavailable)",
+  "metadata": {
+    "polity": "Artuqids of Mardin",
+    "reference_year": 1165,
+    "historical_period": "Reign of Najm al-Din Alpi (1152–1176 CE)",
+    "geometry_scope": "Capital location only; not a territorial boundary",
+    "source_note": "The supplied Cliopatria polities dataset has no Artuqid polity polygon for this period. A polygon has intentionally not been fabricated.",
+    "location_note": "Mardin is the dynastic seat, not a confirmed mint for C023."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mardin (Artuqid dynastic seat)",
+        "Type": "CAPITAL",
+        "FromYear": 1152,
+        "ToYear": 1176,
+        "polity": "Artuqids of Mardin",
+        "note": "Approximate city center; no Artuqid territorial polygon available"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.7351,
+          37.3131
+        ]
+      }
+    }
+  ]
+}
