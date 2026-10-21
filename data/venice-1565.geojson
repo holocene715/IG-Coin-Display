@@ -1,0 +1,332 @@
+{
+  "type": "FeatureCollection",
+  "name": "Republic of Venice — representative possessions in 1565 CE",
+  "description": "Historically grounded reference locations of Venetian rule in 1565, not a polygon reconstruction. These points do not imply control of the surrounding area or show full territorial extent. Trade outposts without territorial sovereignty are omitted.",
+  "map_year": 1565,
+  "geometry_scope": "representative possession points only",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Venice and lagoon",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "capital / Dogado",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3155,
+          45.4408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Padua",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8768,
+          45.4064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Verona",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9916,
+          45.4384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vicenza",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5354,
+          45.5455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Treviso",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2451,
+          45.6669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergamo",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6773,
+          45.6983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brescia",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2118,
+          45.5416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Udine",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "mainland",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.235,
+          46.071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zadar",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Dalmatian coastal possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2314,
+          44.1194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Šibenik",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Dalmatian coastal possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8952,
+          43.735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Split",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Dalmatian coastal possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4402,
+          43.5081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kotor",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Adriatic coastal possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7712,
+          42.4247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corfu",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Ionian island possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9217,
+          39.6243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Candia (Heraklion), Crete",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Cretan possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1442,
+          35.3387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chania, Crete",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Cretan possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.018,
+          35.5138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nicosia, Cyprus",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Cyprus, Venetian possession until 1570–1571",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3823,
+          35.1856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Famagusta, Cyprus",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Cyprus, Venetian possession until 1571",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9422,
+          35.125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zakynthos",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Ionian island possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8999,
+          37.787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cephalonia",
+        "map_year": 1565,
+        "polity": "Republic of Venice",
+        "role": "Ionian island possession",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.56,
+          38.18
+        ]
+      }
+    }
+  ]
+}
