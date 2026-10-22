@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "name": "Duchy of Florence - representative locations, 1546 CE",
+  "properties": {
+    "polity": "Duchy of Florence",
+    "year": 1546,
+    "representation": "Representative settlements, not territorial boundaries",
+    "historical_note": "Locations selected to illustrate Florentine holdings before the conquest of Siena in 1555. Points indicate urban centers, not a complete inventory of jurisdiction or a precise reconstruction of borders."
+  },
+  "features": [
+    {"type":"Feature","properties":{"name":"Florence","role":"Ducal capital"},"geometry":{"type":"Point","coordinates":[11.2558,43.7696]}},
+    {"type":"Feature","properties":{"name":"Pisa","role":"Florentine-controlled city"},"geometry":{"type":"Point","coordinates":[10.4017,43.7228]}},
+    {"type":"Feature","properties":{"name":"Pistoia","role":"Florentine-controlled city"},"geometry":{"type":"Point","coordinates":[10.9173,43.9333]}},
+    {"type":"Feature","properties":{"name":"Prato","role":"Florentine-controlled city"},"geometry":{"type":"Point","coordinates":[11.0970,43.8777]}},
+    {"type":"Feature","properties":{"name":"Arezzo","role":"Florentine-controlled city"},"geometry":{"type":"Point","coordinates":[11.8796,43.4633]}},
+    {"type":"Feature","properties":{"name":"Cortona","role":"Florentine-controlled city"},"geometry":{"type":"Point","coordinates":[11.9853,43.2752]}},
+    {"type":"Feature","properties":{"name":"Volterra","role":"Florentine-controlled city"},"geometry":{"type":"Point","coordinates":[10.8600,43.4020]}},
+    {"type":"Feature","properties":{"name":"San Miniato","role":"Florentine-controlled town"},"geometry":{"type":"Point","coordinates":[10.8527,43.6795]}},
+    {"type":"Feature","properties":{"name":"Empoli","role":"Florentine-controlled town"},"geometry":{"type":"Point","coordinates":[10.9476,43.7179]}},
+    {"type":"Feature","properties":{"name":"Livorno","role":"Florentine-controlled port"},"geometry":{"type":"Point","coordinates":[10.3090,43.5485]}},
+    {"type":"Feature","properties":{"name":"Pescia","role":"Florentine-controlled town"},"geometry":{"type":"Point","coordinates":[10.6891,43.8973]}},
+    {"type":"Feature","properties":{"name":"Montecatini Terme","role":"Valdinievole settlement (modern location name)"},"geometry":{"type":"Point","coordinates":[10.7747,43.8836]}}
+  ]
+}
