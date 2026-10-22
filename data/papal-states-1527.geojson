@@ -1,0 +1,330 @@
+{
+  "type": "FeatureCollection",
+  "name": "Papal States representative locations circa 1527",
+  "description": "Point-based indicative map of selected cities in the Papal States during Clement VII pontificate. Not an exhaustive list or reconstructed political boundary. Local autonomy and direct control varied.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rome",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "papal capital",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viterbo",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Papal Patrimony",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1077,
+          42.4207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orvieto",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Umbria / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1107,
+          42.7185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perugia",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Umbria / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3888,
+          43.1107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spoleto",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Umbria / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.737,
+          42.7405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Terni",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Umbria / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6477,
+          42.5636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rieti",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Sabina / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8621,
+          42.4049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ancona",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "March of Ancona",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5189,
+          43.6158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Macerata",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "March of Ancona",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4533,
+          43.3002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fermo",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "March of Ancona",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7184,
+          43.161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ascoli Piceno",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "March of Ancona",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5769,
+          42.8536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bologna",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Papal Legation of Bologna",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3426,
+          44.4949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ravenna",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Romagna / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2035,
+          44.4184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forlì",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Romagna / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0407,
+          44.2226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cesena",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Romagna / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2429,
+          44.1396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rimini",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Romagna / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5695,
+          44.0678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Faenza",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Romagna / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8833,
+          44.2857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Imola",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Romagna / papal city",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7158,
+          44.3531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Civitavecchia",
+        "map_year": 1527,
+        "polity": "Papal States",
+        "role": "Papal port",
+        "representation": "representative location; not territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7968,
+          42.0924
+        ]
+      }
+    }
+  ]
+}
