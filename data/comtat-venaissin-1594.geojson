@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "name": "Comtat Venaissin c. 1594",
+  "description": "Cliopatria historical polygon for Comtat Venaissin (1482–1672), selected for 1594. Avignon lies within the generalized polygon; separate city jurisdiction is not represented.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Comtat Venaissin",
+        "FromYear": 1482,
+        "ToYear": 1672,
+        "Area": 2319.0044556150337,
+        "Type": "POLITY",
+        "Wikipedia": "Comtat Venaissin",
+        "Wikidata": "Q1122980",
+        "SeshatID": "",
+        "Components": "",
+        "MemberOf": "",
+        "map_year": 1594,
+        "display_name": "Papal territory of Avignon and the Comtat Venaissin",
+        "source": "Cliopatria polities GeoJSON, user-provided archive",
+        "boundary_note": "Cliopatria Comtat Venaissin polygon; Avignon falls inside this generalized polygon, but is not separately delineated. Approximate historical boundary."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.712142467498779,
+              44.32010269165039
+            ],
+            [
+              4.716685771942139,
+              44.18956756591797
+            ],
+            [
+              5.037789344787598,
+              44.25482940673828
+            ],
+            [
+              4.961288928985596,
+              44.12431716918945
+            ],
+            [
+              4.799726963043213,
+              44.12431716918945
+            ],
+            [
+              4.730143547058105,
+              43.79821014404297
+            ],
+            [
+              4.97415018081665,
+              43.73301696777344
+            ],
+            [
+              5.048438549041748,
+              43.92862319946289
+            ],
+            [
+              5.288479328155518,
+              43.99384307861328
+            ],
+            [
+              5.110112190246582,
+              44.5159797668457
+            ],
+            [
+              4.95257568359375,
+              44.38538360595703
+            ],
+            [
+              4.707570552825928,
+              44.45067596435547
+            ],
+            [
+              4.631268501281738,
+              44.32010269165039
+            ],
+            [
+              4.712142467498779,
+              44.32010269165039
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
