@@ -1,0 +1,773 @@
+{
+  "type": "FeatureCollection",
+  "name": "holy-roman-empire-1574",
+  "description": "Indicative point map of major cities and territories associated with the Holy Roman Empire c.1574, including parts of the Burgundian Circle and northern Italian imperial fiefs. Not an outline of imperial borders or an exhaustive inventory. Sovereignty in the Low Countries was contested during the Dutch Revolt.",
+  "source_note": "Contextualized using historical maps of Europe c.1560 and Rhine Countries 1543; points are approximate modern city-center coordinates.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colmar",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "mint",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3585,
+          48.0794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strasbourg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7521,
+          48.5734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haguenau",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7907,
+          48.8156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sélestat",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.454,
+          48.259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Speyer",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4378,
+          49.3173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Worms",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3597,
+          49.6341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mainz",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "electorate",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2473,
+          50.0012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frankfurt",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6821,
+          50.1109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cologne",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9603,
+          50.9375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aachen",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0839,
+          50.7753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trier",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "electorate",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6394,
+          49.7499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuremberg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0767,
+          49.4521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Augsburg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8978,
+          48.3705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ulm",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9934,
+          48.4011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Regensburg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0968,
+          49.0134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Bavaria",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.582,
+          48.1351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stuttgart",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Württemberg",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1829,
+          48.7758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Electoral Palatinate",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6724,
+          49.3988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Würzburg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "prince-bishopric",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9534,
+          49.7913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamberg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "prince-bishopric",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8987,
+          49.8917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vienna",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Habsburg Austria",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Graz",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Inner Austria",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4395,
+          47.0707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Innsbruck",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Tyrol",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4041,
+          47.2692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salzburg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "prince-archbishopric",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.055,
+          47.8095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prague",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Bohemia",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.0755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brno",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Moravia",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6068,
+          49.1951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Breslau (Wrocław)",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Silesia",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0385,
+          51.1079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dresden",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Saxony",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7373,
+          51.0504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leipzig",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Saxony",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3731,
+          51.3397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berlin",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Brandenburg",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.405,
+          52.52
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Magdeburg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "archbishopric",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6276,
+          52.1205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hamburg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9937,
+          53.5511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lübeck",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6866,
+          53.8655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bremen",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial city",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8017,
+          53.0793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brunswick",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Brunswick-Lüneburg",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5268,
+          52.2689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Münster",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "prince-bishopric",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6261,
+          51.9607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kassel",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Hesse",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4797,
+          51.3127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amsterdam",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Low Countries; sovereignty disputed in revolt",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9041,
+          52.3676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brussels",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Burgundian Circle",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3517,
+          50.8503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Antwerp",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Burgundian Circle",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4025,
+          51.2194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luxembourg",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Burgundian Circle",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1319,
+          49.6116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Besançon",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Franche-Comté",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0241,
+          47.2378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milan",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "Imperial fief under Spanish Habsburg rule",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.19,
+          45.4642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mantua",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial fief",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7914,
+          45.1564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Modena",
+        "polity": "Holy Roman Empire",
+        "map_year": 1574,
+        "role": "imperial fief",
+        "representation": "representative point; not a territorial boundary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9252,
+          44.6471
+        ]
+      }
+    }
+  ]
+}
