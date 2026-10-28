@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<p>Navigation test: Previous = {{ previous_coin.catalog | default: "NONE" }} / Next = {{ next_coin.catalog | default: "NONE" }}</p>
+
 <nav class="coin-navigation coin-navigation-top" aria-label="Top coin navigation">
   <div class="coin-nav-prev">
     {% if previous_coin %}
