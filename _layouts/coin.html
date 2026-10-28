@@ -308,3 +308,43 @@ fetch('{{ page.polity_geojson | relative_url }}')
 </body>
 </html>
 
+
+{% assign sorted_coins = site.pages | where: "layout", "coin" | sort: "display_order" %}
+
+{% assign previous_coin = nil %}
+{% assign next_coin = nil %}
+{% assign found_current = false %}
+
+{% for coin in sorted_coins %}
+  {% if found_current %}
+    {% assign next_coin = coin %}
+    {% break %}
+  {% endif %}
+
+  {% if coin.coin_id == page.coin_id %}
+    {% assign found_current = true %}
+  {% else %}
+    {% assign previous_coin = coin %}
+  {% endif %}
+{% endfor %}
+
+<nav class="coin-navigation" aria-label="Coin navigation">
+  <div class="coin-nav-prev">
+    {% if previous_coin %}
+      <a href="{{ previous_coin.url | relative_url }}">
+        <span class="coin-nav-direction">← Previous Coin</span>
+        <span class="coin-nav-title">{{ previous_coin.catalog }}</span>
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="coin-nav-next">
+    {% if next_coin %}
+      <a href="{{ next_coin.url | relative_url }}">
+        <span class="coin-nav-direction">Next Coin →</span>
+        <span class="coin-nav-title">{{ next_coin.catalog }}</span>
+      </a>
+    {% endif %}
+  </div>
+</nav>
+
