@@ -331,24 +331,33 @@ fetch('{{ page.polity_geojson | relative_url }}')
 </html>
 
 
-{% assign sorted_coins = site.pages | where: "layout", "coin" | sort: "coin_id" %}
+
+{% assign sorted_coins = site.pages | where: "layout", "coin" | sort: "url" %}
 
 {% assign previous_coin = nil %}
 {% assign next_coin = nil %}
-{% assign found_current = false %}
+{% assign current_index = nil %}
 
 {% for coin in sorted_coins %}
-  {% if found_current %}
-    {% assign next_coin = coin %}
+  {% if coin.url == page.url %}
+    {% assign current_index = forloop.index0 %}
     {% break %}
   {% endif %}
-
-  {% if coin.coin_id == page.coin_id %}
-    {% assign found_current = true %}
-  {% else %}
-    {% assign previous_coin = coin %}
-  {% endif %}
 {% endfor %}
+
+{% if current_index != nil %}
+  {% assign previous_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+
+  {% if previous_index >= 0 %}
+    {% assign previous_coin = sorted_coins[previous_index] %}
+  {% endif %}
+
+  {% if next_index < sorted_coins.size %}
+    {% assign next_coin = sorted_coins[next_index] %}
+  {% endif %}
+{% endif %}
+
 
 
 <nav class="coin-navigation coin-navigation-bottom" aria-label="Bottom coin navigation">
