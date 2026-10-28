@@ -493,4 +493,19 @@ footer {
   .coin-navigation a {
     padding: 10px;
   }
+  
+}
+
+.coin-navigation-top {
+  margin: 10px 0 25px;
+  padding-top: 0;
+  padding-bottom: 15px;
+  border-top: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+.coin-navigation-bottom {
+  margin: 35px 0 15px;
+  padding-top: 20px;
+  border-top: 1px solid #cccccc;
 }
