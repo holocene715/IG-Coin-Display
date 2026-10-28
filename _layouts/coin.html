@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<nav class="coin-navigation coin-navigation-top" aria-label="Top coin navigation">
+  <div class="coin-nav-prev">
+    {% if previous_coin %}
+      <a href="{{ previous_coin.url | relative_url }}">
+        <span class="coin-nav-direction">← Previous Coin</span>
+        <span class="coin-nav-title">{{ previous_coin.catalog }}</span>
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="coin-nav-next">
+    {% if next_coin %}
+      <a href="{{ next_coin.url | relative_url }}">
+        <span class="coin-nav-direction">Next Coin →</span>
+        <span class="coin-nav-title">{{ next_coin.catalog }}</span>
+      </a>
+    {% endif %}
+  </div>
+</nav>
+  
   <title>{{ page.catalog }} — {{ page.title }}</title>
 
   <link rel="stylesheet"
@@ -336,27 +356,6 @@ fetch('{{ page.polity_geojson | relative_url }}')
   {% endif %}
 {% endif %}
 
-
-
-<nav class="coin-navigation coin-navigation-top" aria-label="Top coin navigation">
-  <div class="coin-nav-prev">
-    {% if previous_coin %}
-      <a href="{{ previous_coin.url | relative_url }}">
-        <span class="coin-nav-direction">← Previous Coin</span>
-        <span class="coin-nav-title">{{ previous_coin.catalog }}</span>
-      </a>
-    {% endif %}
-  </div>
-
-  <div class="coin-nav-next">
-    {% if next_coin %}
-      <a href="{{ next_coin.url | relative_url }}">
-        <span class="coin-nav-direction">Next Coin →</span>
-        <span class="coin-nav-title">{{ next_coin.catalog }}</span>
-      </a>
-    {% endif %}
-  </div>
-</nav>
 
 <nav class="coin-navigation coin-navigation-bottom" aria-label="Bottom coin navigation">
   <div class="coin-nav-prev">
