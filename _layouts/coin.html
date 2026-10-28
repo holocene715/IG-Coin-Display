@@ -4,7 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>Navigation test: Previous = {{ previous_coin.catalog | default: "NONE" }} / Next = {{ next_coin.catalog | default: "NONE" }}</p>
+  <title>{{ page.catalog }} — {{ page.title }}</title>
+
+  <link rel="stylesheet"
+        href="{{ '/assets/style.css' | relative_url }}">
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+  
+</head>
+
+<body>
+
+  
+{% assign sorted_coins = site.pages | where: "layout", "coin" | sort: "url" %}
+
+{% assign previous_coin = nil %}
+{% assign next_coin = nil %}
+{% assign found_current = false %}
+
+{% for coin in sorted_coins %}
+  {% if found_current %}
+    {% assign next_coin = coin %}
+    {% break %}
+  {% endif %}
+
+  {% if coin.url == page.url %}
+    {% assign found_current = true %}
+  {% else %}
+    {% assign previous_coin = coin %}
+  {% endif %}
+{% endfor %}
 
 <nav class="coin-navigation coin-navigation-top" aria-label="Top coin navigation">
   <div class="coin-nav-prev">
@@ -25,24 +61,6 @@
     {% endif %}
   </div>
 </nav>
-  
-  <title>{{ page.catalog }} — {{ page.title }}</title>
-
-  <link rel="stylesheet"
-        href="{{ '/assets/style.css' | relative_url }}">
-
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
-
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-  
-</head>
-
-<body>
 
 <main class="coin-page">
   
