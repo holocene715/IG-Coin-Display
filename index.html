@@ -1,0 +1,114 @@
+---
+layout: null
+permalink: /
+title: Historical Coin Collection
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | Interactive Display</title>
+<meta name="description" content="Explore a collection of 49 historical coins through an interactive map of the physical display.">
+<style>
+:root {color-scheme:light; --ink:#292b2b; --muted:#696967; --line:#dcd8cf; --paper:#f7f5f0; --accent:#80565d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit}
+.shell{max-width:1480px;margin:auto;padding:0 clamp(14px,3.5vw,54px)}
+header{border-bottom:1px solid var(--line);background:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:66px}
+.brand{font-family:Georgia,serif;font-size:1.1rem;font-weight:700;text-decoration:none;letter-spacing:.01em}
+header nav{display:flex;gap:20px;font-size:.9rem}
+header nav a{text-decoration:none;color:#555}
+header nav a:hover{text-decoration:underline}
+main{padding-bottom:52px}
+.intro{text-align:center;padding:44px 12px 25px}
+.eyebrow{font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;color:#776d65;font-weight:700}
+h1{font-family:Georgia,Times New Roman,serif;font-size:clamp(2.1rem,4vw,3.5rem);line-height:1.15;font-weight:500;margin:9px 0 15px}
+.intro p{max-width:670px;margin:0 auto;color:#5e5c58}
+.map-section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(10px,2vw,25px);box-shadow:0 10px 28px #30261d0a}
+.map-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:0 3px 12px}
+.map-toolbar h2{font:500 1.16rem Georgia,serif;margin:0}
+.map-toolbar p{margin:0;font-size:.82rem;color:var(--muted)}
+.map-scroll{overflow-x:auto;overscroll-behavior-x:contain;border-radius:5px;background:#fff}
+.coin-map{width:100%}
+.coin-map svg{display:block;width:100%;height:auto}
+.coin-map .coin-hit{cursor:pointer;pointer-events:all}
+.coin-map a:hover .coin-hit,.coin-map a:focus .coin-hit{stroke:#9d5d2e;stroke-width:.065;fill:#f3c77e38;outline:none}
+.coin-map a:focus-visible .coin-hit{stroke:#8c2c31;stroke-width:.10}
+.map-help{margin:14px 4px 0;font-size:.86rem;color:var(--muted)}
+.below{display:flex;justify-content:space-between;gap:20px;align-items:start;padding:30px 4px 0;flex-wrap:wrap}
+.below h2{font:500 1.3rem Georgia,serif;margin:0 0 7px}
+.below p{margin:0;color:var(--muted);max-width:650px}
+.jump{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.jump label{font-size:.9rem;font-weight:600}
+.jump select,.jump button{font:inherit;padding:10px 12px;border:1px solid #c8c4bb;border-radius:6px;background:#fff}
+.jump button{background:#3b3935;color:#fff;border-color:#3b3935;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:22px 0 35px;font-size:.83rem;color:var(--muted)}
+@media(max-width:760px){.intro{padding:30px 0 22px}.coin-map svg{min-width:850px}.map-toolbar p{font-size:.78rem}.below{padding-top:24px}.jump{width:100%}.jump select{flex:1;min-width:130px}}
+</style>
+</head>
+<body>
+<header><div class="shell header-inner"><a class="brand" href="{{ '/' | relative_url }}">Historical Coin Collection</a><nav aria-label="Main navigation"><a href="#display">Explore display</a><a href="#coin-jump">Find a coin</a></nav></div></header>
+<main class="shell">
+<section class="intro" aria-labelledby="page-title"><div class="eyebrow">An interactive numismatic collection</div><h1 id="page-title">Explore 49 Coins Across History</h1><p>Discover the rulers, empires, and exchanges behind the coins. Select a coin in the display below to explore its history, inscriptions, and historical map.</p></section>
+<section id="display" class="map-section" aria-label="Interactive coin display"><div class="map-toolbar"><h2>The Collection</h2><p>49 coins · Click or tap a coin to explore</p></div><div class="map-scroll"><div class="coin-map">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 22" role="img" aria-label="Interactive map of 49 historical coins"><image href="{{ "/images/coin-display-map.png" | relative_url }}" x="0" y="0" width="28" height="22" preserveAspectRatio="none"/><a href="{{ "/coins/C001/" | relative_url }}" aria-label="View coin C001"><title>C001 — view coin details</title><ellipse cx="5.25167" cy="3.45037" rx="0.30500" ry="0.30709" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C002/" | relative_url }}" aria-label="View coin C002"><title>C002 — view coin details</title><ellipse cx="8.58700" cy="3.45037" rx="0.35500" ry="0.35630" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C003/" | relative_url }}" aria-label="View coin C003"><title>C003 — view coin details</title><ellipse cx="11.96233" cy="3.45037" rx="0.34500" ry="0.34646" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C004/" | relative_url }}" aria-label="View coin C004"><title>C004 — view coin details</title><ellipse cx="15.31267" cy="3.45037" rx="0.33000" ry="0.33071" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C005/" | relative_url }}" aria-label="View coin C005"><title>C005 — view coin details</title><ellipse cx="18.62300" cy="3.45037" rx="0.30500" ry="0.30709" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C006/" | relative_url }}" aria-label="View coin C006"><title>C006 — view coin details</title><ellipse cx="21.99833" cy="3.45037" rx="0.39500" ry="0.39370" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C007/" | relative_url }}" aria-label="View coin C007"><title>C007 — view coin details</title><ellipse cx="5.24667" cy="6.15513" rx="0.37000" ry="0.37205" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C008/" | relative_url }}" aria-label="View coin C008"><title>C008 — view coin details</title><ellipse cx="8.57500" cy="6.15513" rx="0.47500" ry="0.47244" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C009/" | relative_url }}" aria-label="View coin C009"><title>C009 — view coin details</title><ellipse cx="12.01333" cy="6.15513" rx="0.41000" ry="0.40945" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C010/" | relative_url }}" aria-label="View coin C010"><title>C010 — view coin details</title><ellipse cx="15.34942" cy="6.15513" rx="0.40276" ry="0.40551" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C011/" | relative_url }}" aria-label="View coin C011"><title>C011 — view coin details</title><ellipse cx="20.51054" cy="6.15513" rx="0.55721" ry="0.56102" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C012/" | relative_url }}" aria-label="View coin C012"><title>C012 — view coin details</title><ellipse cx="5.25833" cy="9.13942" rx="0.30500" ry="0.30709" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C013/" | relative_url }}" aria-label="View coin C013"><title>C013 — view coin details</title><ellipse cx="8.60350" cy="9.13942" rx="0.46483" ry="0.46654" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C014/" | relative_url }}" aria-label="View coin C014"><title>C014 — view coin details</title><ellipse cx="12.06698" cy="9.13942" rx="0.54298" ry="0.54528" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C015/" | relative_url }}" aria-label="View coin C015"><title>C015 — view coin details</title><ellipse cx="15.38862" cy="9.13942" rx="0.47929" ry="0.48031" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C016/" | relative_url }}" aria-label="View coin C016"><title>C016 — view coin details</title><ellipse cx="18.73646" cy="9.13942" rx="0.53179" ry="0.53543" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C017/" | relative_url }}" aria-label="View coin C017"><title>C017 — view coin details</title><ellipse cx="22.02545" cy="9.13942" rx="0.67545" ry="0.67323" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C018/" | relative_url }}" aria-label="View coin C018"><title>C018 — view coin details</title><ellipse cx="5.28000" cy="12.13356" rx="0.32000" ry="0.33574" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C019/" | relative_url }}" aria-label="View coin C019"><title>C019 — view coin details</title><ellipse cx="8.54776" cy="12.13356" rx="0.28243" ry="0.28346" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C020/" | relative_url }}" aria-label="View coin C020"><title>C020 — view coin details</title><ellipse cx="12.04351" cy="12.13356" rx="0.35284" ry="0.39370" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C021/" | relative_url }}" aria-label="View coin C021"><title>C021 — view coin details</title><ellipse cx="15.37761" cy="12.13356" rx="0.46161" ry="0.46260" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C022/" | relative_url }}" aria-label="View coin C022"><title>C022 — view coin details</title><ellipse cx="18.75832" cy="12.13356" rx="0.56699" ry="0.57087" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C023/" | relative_url }}" aria-label="View coin C023"><title>C023 — view coin details</title><ellipse cx="22.05734" cy="12.13356" rx="0.42067" ry="0.41929" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C027/" | relative_url }}" aria-label="View coin C027"><title>C027 — view coin details</title><ellipse cx="8.53956" cy="15.02533" rx="0.39423" ry="0.39567" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C028/" | relative_url }}" aria-label="View coin C028"><title>C028 — view coin details</title><ellipse cx="12.03800" cy="15.02533" rx="0.42733" ry="0.42913" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C029/" | relative_url }}" aria-label="View coin C029"><title>C029 — view coin details</title><ellipse cx="15.38493" cy="15.02533" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C024/" | relative_url }}" aria-label="View coin C024"><title>C024 — view coin details</title><ellipse cx="18.80733" cy="15.02533" rx="0.43599" ry="0.43898" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C025/" | relative_url }}" aria-label="View coin C025"><title>C025 — view coin details</title><ellipse cx="22.04499" cy="14.72533" rx="0.56699" ry="0.57087" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C026/" | relative_url }}" aria-label="View coin C026"><title>C026 — view coin details</title><ellipse cx="5.30667" cy="15.02533" rx="0.32000" ry="0.33574" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C031/" | relative_url }}" aria-label="View coin C031"><title>C031 — view coin details</title><ellipse cx="8.00244" cy="17.68810" rx="0.46680" ry="0.46850" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C032/" | relative_url }}" aria-label="View coin C032"><title>C032 — view coin details</title><ellipse cx="10.77264" cy="17.68810" rx="0.38028" ry="0.38189" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C034/" | relative_url }}" aria-label="View coin C034"><title>C034 — view coin details</title><ellipse cx="16.16595" cy="17.68810" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C035/" | relative_url }}" aria-label="View coin C035"><title>C035 — view coin details</title><ellipse cx="18.83384" cy="17.68810" rx="0.35583" ry="0.35827" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C036/" | relative_url }}" aria-label="View coin C036"><title>C036 — view coin details</title><ellipse cx="22.03499" cy="16.94729" rx="0.56699" ry="0.57087" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C030/" | relative_url }}" aria-label="View coin C030"><title>C030 — view coin details</title><ellipse cx="5.27293" cy="17.68810" rx="0.33960" ry="0.35630" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C037/" | relative_url }}" aria-label="View coin C037"><title>C037 — view coin details</title><ellipse cx="22.03499" cy="18.63866" rx="0.56699" ry="0.57087" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C033/" | relative_url }}" aria-label="View coin C033"><title>C033 — view coin details</title><ellipse cx="13.46498" cy="17.68810" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C038/" | relative_url }}" aria-label="View coin C038"><title>C038 — view coin details</title><ellipse cx="24.53615" cy="4.93500" rx="0.40912" ry="0.41000" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C039/" | relative_url }}" aria-label="View coin C039"><title>C039 — view coin details</title><ellipse cx="24.51595" cy="6.69572" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C040/" | relative_url }}" aria-label="View coin C040"><title>C040 — view coin details</title><ellipse cx="24.51595" cy="8.47667" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C041/" | relative_url }}" aria-label="View coin C041"><title>C041 — view coin details</title><ellipse cx="24.51595" cy="10.25762" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C042/" | relative_url }}" aria-label="View coin C042"><title>C042 — view coin details</title><ellipse cx="24.51595" cy="12.03857" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C043/" | relative_url }}" aria-label="View coin C043"><title>C043 — view coin details</title><ellipse cx="24.51595" cy="13.81953" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C044/" | relative_url }}" aria-label="View coin C044"><title>C044 — view coin details</title><ellipse cx="24.51595" cy="15.60048" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C045/" | relative_url }}" aria-label="View coin C045"><title>C045 — view coin details</title><ellipse cx="24.51595" cy="17.38143" rx="0.38893" ry="0.38976" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C046/" | relative_url }}" aria-label="View coin C046"><title>C046 — view coin details</title><ellipse cx="3.29725" cy="7.32609" rx="0.67545" ry="0.67323" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C047/" | relative_url }}" aria-label="View coin C047"><title>C047 — view coin details</title><ellipse cx="3.29725" cy="10.17786" rx="0.62706" ry="0.62500" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C048/" | relative_url }}" aria-label="View coin C048"><title>C048 — view coin details</title><ellipse cx="3.29725" cy="13.12609" rx="0.67545" ry="0.67323" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a><a href="{{ "/coins/C049/" | relative_url }}" aria-label="View coin C049"><title>C049 — view coin details</title><ellipse cx="3.29725" cy="16.02609" rx="0.67545" ry="0.67323" fill="transparent" stroke="transparent" stroke-width=".025" class="coin-hit"/></a></svg>
+</div></div><p class="map-help">The display follows the physical arrangement and color-coded historical series. On a phone, swipe horizontally to see the full board.</p></section>
+<section class="below" id="coin-jump"><div><h2>Looking for a particular coin?</h2><p>Use the catalog number to open a coin directly, or explore the display visually above.</p></div><form class="jump" id="jump-form"><label for="coin-select">Catalog</label><select id="coin-select" aria-label="Choose a coin catalog number"><option value="">Select coin…</option>
+<option value="C001">C001</option>
+<option value="C002">C002</option>
+<option value="C003">C003</option>
+<option value="C004">C004</option>
+<option value="C005">C005</option>
+<option value="C006">C006</option>
+<option value="C007">C007</option>
+<option value="C008">C008</option>
+<option value="C009">C009</option>
+<option value="C010">C010</option>
+<option value="C011">C011</option>
+<option value="C012">C012</option>
+<option value="C013">C013</option>
+<option value="C014">C014</option>
+<option value="C015">C015</option>
+<option value="C016">C016</option>
+<option value="C017">C017</option>
+<option value="C018">C018</option>
+<option value="C019">C019</option>
+<option value="C020">C020</option>
+<option value="C021">C021</option>
+<option value="C022">C022</option>
+<option value="C023">C023</option>
+<option value="C024">C024</option>
+<option value="C025">C025</option>
+<option value="C026">C026</option>
+<option value="C027">C027</option>
+<option value="C028">C028</option>
+<option value="C029">C029</option>
+<option value="C030">C030</option>
+<option value="C031">C031</option>
+<option value="C032">C032</option>
+<option value="C033">C033</option>
+<option value="C034">C034</option>
+<option value="C035">C035</option>
+<option value="C036">C036</option>
+<option value="C037">C037</option>
+<option value="C038">C038</option>
+<option value="C039">C039</option>
+<option value="C040">C040</option>
+<option value="C041">C041</option>
+<option value="C042">C042</option>
+<option value="C043">C043</option>
+<option value="C044">C044</option>
+<option value="C045">C045</option>
+<option value="C046">C046</option>
+<option value="C047">C047</option>
+<option value="C048">C048</option>
+<option value="C049">C049</option>
+</select><button type="submit">View coin →</button></form></section>
+</main><footer><div class="shell">An illustrated guide to the historical coin display.</div></footer>
+<script>
+document.getElementById('jump-form').addEventListener('submit',function(event){event.preventDefault();const id=document.getElementById('coin-select').value;if(id){window.location.href={{ '/coins/' | relative_url | jsonify }}+id+'/';}});
+</script>
+</body></html>
