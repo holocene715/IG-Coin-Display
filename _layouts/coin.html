@@ -52,6 +52,10 @@
     {% endif %}
   </div>
 
+  <a href="{{ '/' | relative_url }}" class="display-home-button">
+  ← Return to Coin Display
+</a>
+  
   <div class="coin-nav-next">
     {% if next_coin %}
       <a href="{{ next_coin.url | relative_url }}">
