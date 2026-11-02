@@ -20,7 +20,7 @@
   
 </head>
 
-<body>
+<body class="coin-series-{{ page.series | default: 'main' | escape }}"{% if page.page_background %} style="background-color: {{ page.page_background | escape }};"{% endif %}>
 
   
 {% assign sorted_coins = site.pages | where: "layout", "coin" | sort: "url" %}
@@ -287,8 +287,8 @@
 <script>
 
 const map = L.map('coin-map').setView(
-  [{{ page.mint_lat }}, {{ page.mint_lon }}],
-  {{ page.map_zoom }}
+  [{{ page.map_center_lat | default: page.mint_lat }}, {{ page.map_center_lon | default: page.mint_lon }}],
+  {{ page.map_zoom | default: 4 }}
 );
 
 L.tileLayer(
@@ -349,37 +349,6 @@ fetch('{{ page.polity_geojson | relative_url }}')
 
 </main>
 
-</body>
-</html>
-
-
-
-{% assign sorted_coins = site.pages | where: "layout", "coin" | sort: "url" %}
-
-{% assign previous_coin = nil %}
-{% assign next_coin = nil %}
-{% assign current_index = nil %}
-
-{% for coin in sorted_coins %}
-  {% if coin.url == page.url %}
-    {% assign current_index = forloop.index0 %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-
-{% if current_index != nil %}
-  {% assign previous_index = current_index | minus: 1 %}
-  {% assign next_index = current_index | plus: 1 %}
-
-  {% if previous_index >= 0 %}
-    {% assign previous_coin = sorted_coins[previous_index] %}
-  {% endif %}
-
-  {% if next_index < sorted_coins.size %}
-    {% assign next_coin = sorted_coins[next_index] %}
-  {% endif %}
-{% endif %}
-
 
 <nav class="coin-navigation coin-navigation-bottom" aria-label="Bottom coin navigation">
   <div class="coin-nav-prev">
@@ -401,3 +370,5 @@ fetch('{{ page.polity_geojson | relative_url }}')
   </div>
 </nav>
 
+</body>
+</html>
